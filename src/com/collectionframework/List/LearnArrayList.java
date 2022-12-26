@@ -23,6 +23,17 @@ public class LearnArrayList {
 
         System.out.println(aList);
 
+//        iterating using for loop
+
+        for(int i = 0;i<aList.size();i++){
+            System.out.println("The elements are : "+aList.get(i));
+        }
+
+//        iterating using for each loop
+        for(Integer ele:aList){
+            System.out.println("Using For-each,The elements are : "+ele);
+        }
+
 
         /*
         you can declare ArrayList in another way as well
@@ -50,6 +61,11 @@ public class LearnArrayList {
 
         boolean bool = list.contains("Gaurab");
         System.out.println(bool);   // this will check if the list contains the following element or not
+
+        System.out.println(list.get(2)); // this is used to get the element of following index
+
+        list.set(2,"Abhi");
+        System.out.println(list);  // this is used to set the element at following index
 
         list.clear();
         System.out.println(list); // this will clear/empty the list
